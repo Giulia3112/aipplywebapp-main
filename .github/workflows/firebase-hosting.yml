@@ -23,9 +23,9 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_RAILWAY_API_URL: ${{ secrets.VITE_RAILWAY_API_URL || 'https://aipply-ai-agent-main-production.up.railway.app' }}
-          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL || 'https://qphnyfdtjxrqmdbjspoe.supabase.co' }}
-          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFwaG55ZmR0anhxcW1kYmpzcG9lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY5NTI4NzQsImV4cCI6MjA1MjUyODg3NH0.placeholder' }}
+          VITE_RAILWAY_API_URL: 'https://aipply-ai-agent-main-production.up.railway.app'
+          VITE_SUPABASE_URL: 'https://qphnyfdtjxrqmdbjspoe.supabase.co'
+          VITE_SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFwaG55ZmR0anhxcW1kYmpzcG9lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY5NTI4NzQsImV4cCI6MjA1MjUyODg3NH0.placeholder'
           
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
