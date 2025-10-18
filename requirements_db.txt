@@ -1,0 +1,20 @@
+# Required dependencies for Railway API with Database
+
+# Web framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Database
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9  # PostgreSQL adapter
+python-dateutil==2.8.2  # For date parsing
+
+# Your existing dependencies (add these)
+# Add your scraping libraries here (beautifulsoup4, requests, etc.)
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# Optional but recommended
+python-dotenv==1.0.0  # For local development
+
