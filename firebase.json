@@ -4,7 +4,22 @@
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "**/*.py",
+      "**/*.pyc",
+      "**/__pycache__/**",
+      "**/railway_deploy/**",
+      "**/services/**",
+      "**/scraper_db_integration/**",
+      "**/requirements*.txt",
+      "**/main_with_db.py",
+      "**/database_setup.py",
+      "**/create_*.py",
+      "**/add_*.py",
+      "**/check_*.py",
+      "**/test_*.py",
+      "**/prepare_*.py",
+      "**/temp_results.json"
     ],
     "rewrites": [
       {
