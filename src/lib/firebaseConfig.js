@@ -2,16 +2,17 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
+import { getAnalytics } from 'firebase/analytics';
 
 // Your Firebase configuration
 const firebaseConfig = {
-  // Replace with your actual Firebase config from Firebase Console
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "your-api-key",
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "aipply-app.firebaseapp.com",
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "aipply-app",
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "aipply-app.appspot.com",
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "your-sender-id",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID || "your-app-id"
+  apiKey: "AIzaSyB700Q-CFdQ93DIv3tBxIzXcuGbyIib4-o",
+  authDomain: "aipplytech.firebaseapp.com",
+  projectId: "aipplytech",
+  storageBucket: "aipplytech.firebasestorage.app",
+  messagingSenderId: "155524064281",
+  appId: "1:155524064281:web:eee375eaec6f5f74bfb688",
+  measurementId: "G-3JR491SPR2"
 };
 
 // Initialize Firebase
@@ -22,5 +23,8 @@ export const auth = getAuth(app);
 
 // Initialize Cloud Firestore and get a reference to the service
 export const db = getFirestore(app);
+
+// Initialize Analytics and get a reference to the service
+export const analytics = getAnalytics(app);
 
 export default app;
