@@ -26,6 +26,13 @@ jobs:
           VITE_RAILWAY_API_URL: 'https://aipply-ai-agent-main-production.up.railway.app'
           VITE_SUPABASE_URL: 'https://qphnyfdtjxrqmdbjspoe.supabase.co'
           VITE_SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFwaG55ZmR0anhxcW1kYmpzcG9lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY5NTI4NzQsImV4cCI6MjA1MjUyODg3NH0.placeholder'
+          VITE_FIREBASE_API_KEY: 'AIzaSyB700Q-CFdQ93DIv3tBxIzXcuGbyIib4-o'
+          VITE_FIREBASE_AUTH_DOMAIN: 'aipplytech.firebaseapp.com'
+          VITE_FIREBASE_PROJECT_ID: 'aipplytech'
+          VITE_FIREBASE_STORAGE_BUCKET: 'aipplytech.firebasestorage.app'
+          VITE_FIREBASE_MESSAGING_SENDER_ID: '155524064281'
+          VITE_FIREBASE_APP_ID: '1:155524064281:web:eee375eaec6f5f74bfb688'
+          VITE_FIREBASE_MEASUREMENT_ID: 'G-3JR491SPR2'
           
       - name: Deploy to Firebase Hosting
         run: |
